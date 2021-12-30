@@ -40,20 +40,47 @@
             <hr class="sidebar-divider">
             <!-- Nav Item - Dashboard -->
             <li class="nav-item ">
-         
-                <a class="nav-link active" href="{{ route('residents.index')}}">Resident Management</a>
+                <a class="nav-link active" href="{{ route('dashboards.index')}}">Dashboard</a>
+                
             
             </li>
             <hr class="sidebar-divider">
-            @if(auth()->user()->is_admin == 1 )
+            
+            
 
             <li class="nav-item active">
-            
-                  
-            <a class="nav-link active" href="{{ route('dashboards.index')}}">Dashboard</a>
-    </li>
-    <hr class="sidebar-divider">
+                <a class="nav-link active" href="{{ route('residents.index')}}">Resident Management</a>
+       
+            </li>
 
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <li class="nav-item ">
+  
+                <li class="nav-item">
+                       <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+                           aria-expanded="true" aria-controls="collapseTwo">
+                         
+                           <span>Analytics</span>
+                       </a>
+                       <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                           <div class="bg-white py-2 collapse-inner rounded">
+           
+                               <a class="collapse-item" href="{{ route('ages.index')}}">Age</a>
+                               <a class="collapse-item" href="{{ route('barangays.index')}}">Barangay</a>
+                               <a class="collapse-item" href="{{ route('genders.index')}}">Gender</a>
+                               <a class="collapse-item" href="{{ route('status.index')}}">Status</a>
+                               <a class="collapse-item" href="{{ route('citizenship.index')}}">Citizenship</a>
+                               <a class="collapse-item" href="{{ route('ps.index')}}">4Ps</a>
+       
+                           </div>
+                       </div>
+                   </li>
+               </li>
+    <hr class="sidebar-divider">
+    
+    @if(auth()->user()->is_admin == 1 )
             <li class="nav-item ">
          
                  <a class="nav-link active" href="{{ route('users.index')}}">User Management</a>
@@ -65,28 +92,7 @@
 
          
          
-            <li class="nav-item ">
-  
-         <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
-                    aria-expanded="true" aria-controls="collapseTwo">
-                  
-                    <span>Analytics</span>
-                </a>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Custom Components:</h6>
-                        <a class="collapse-item" href="{{ route('ages.index')}}">Age</a>
-                        <a class="collapse-item" href="{{ route('barangays.index')}}">Barangay</a>
-                        <a class="collapse-item" href="{{ route('genders.index')}}">Gender</a>
-                        <a class="collapse-item" href="{{ route('status.index')}}">Status</a>
-                        <a class="collapse-item" href="{{ route('citizenship.index')}}">Citizenship</a>
-                        <a class="collapse-item" href="{{ route('ps.index')}}">4Ps</a>
-
-                    </div>
-                </div>
-            </li>
-    </li>
+           
 
         </ul>
         <!-- End of Sidebar -->
@@ -159,12 +165,8 @@
          
             <!-- End of Main Content -->
 
-            <!-- Footer -->
-            <footer class="sticky-footer bg-white">
-         
-                </div>
-            </footer>
-            <!-- End of Footer -->
+            
+            
 
         </div>
         <!-- End of Content Wrapper -->
@@ -187,7 +189,7 @@
     <!-- Custom scripts for all pages-->
     <script src="{{asset('js/sb-admin.min.js')}}"></script>
  
-    </script>
+    
 
 
 </body>

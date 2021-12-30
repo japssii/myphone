@@ -89,20 +89,20 @@
                                 {{ old('brgy') == '1' ? 'selected' : '' }}
                           
                             <select id="brgy" required="" name="brgy" class="form-control">
-    <option value="">--Select--</option>
-    <option {{ ($resident->brgy) == 'Acnam' ? 'selected' : '' }}  value="Acnam">Acnam</option>
-    <option {{ ($resident->brgy) == 'Barangobong' ? 'selected' : '' }}  value="Barangobong">Barangobong</option>
-    <option {{ ($resident->brgy) == 'Barikir' ? 'selected' : '' }}  value="Barikir">Barikir</option>
-    <option {{ ($resident->brgy) == 'Bugayong' ? 'selected' : '' }}  value="Bugayong">Bugayong</option>
-    <option {{ ($resident->brgy) == 'Cabittauran' ? 'selected' : '' }}  value="Cabittauran">Cabittauran</option>
-    <option {{ ($resident->brgy) == 'Caray' ? 'selected' : '' }}  value="Caray">Caray</option>
-    <option {{ ($resident->brgy) == 'Garnaden' ? 'selected' : '' }}  value="Garnaden">Garnaden</option>
-    <option {{ ($resident->brgy) == 'Naguillan(pagpag-ong)' ? 'selected' : '' }}  value="Naguillan(pagpag-ong)">Naguillan(pagpag-ong)</option>
-    <option {{ ($resident->brgy) == 'Poblacion' ? 'selected' : '' }}  value="Poblacion">Poblacion</option>
-    <option {{ ($resident->brgy) == 'Poblacion' ? 'selected' : '' }}  value="Poblacion">Poblacion</option>
-    <option {{ ($resident->brgy) == 'Santo Niño' ? 'selected' : '' }}  value="Santo Niño">Santo Niño</option>
+                                <option value="">--Select--</option>
+                                <option {{ ($resident->brgy) == 'Acnam' ? 'selected' : '' }}  value="Acnam">Acnam</option>
+                                <option {{ ($resident->brgy) == 'Barangobong' ? 'selected' : '' }}  value="Barangobong">Barangobong</option>
+                                <option {{ ($resident->brgy) == 'Barikir' ? 'selected' : '' }}  value="Barikir">Barikir</option>
+                                <option {{ ($resident->brgy) == 'Bugayong' ? 'selected' : '' }}  value="Bugayong">Bugayong</option>
+                                <option {{ ($resident->brgy) == 'Cabittauran' ? 'selected' : '' }}  value="Cabittauran">Cabittauran</option>
+                                <option {{ ($resident->brgy) == 'Caray' ? 'selected' : '' }}  value="Caray">Caray</option>
+                                <option {{ ($resident->brgy) == 'Garnaden' ? 'selected' : '' }}  value="Garnaden">Garnaden</option>
+                                <option {{ ($resident->brgy) == 'Naguillan(pagpag-ong)' ? 'selected' : '' }}  value="Naguillan(pagpag-ong)">Naguillan(pagpag-ong)</option>
+                                <option {{ ($resident->brgy) == 'Poblacion' ? 'selected' : '' }}  value="Poblacion">Poblacion</option>
+                                <option {{ ($resident->brgy) == 'Poblacion' ? 'selected' : '' }}  value="Poblacion">Poblacion</option>
+                                <option {{ ($resident->brgy) == 'Santo Niño' ? 'selected' : '' }}  value="Santo Niño">Santo Niño</option>
 
-</select>
+                            </select>
            
                                 @error('brgy')
                                 <span class="alert alert-primary" role="alert">
@@ -117,13 +117,9 @@
 
                             <div class="col-md-6">
                                 <input id="town" type="text" class="form-control @error('name') is-invalid @enderror" 
-                                name="town" value="{{ old('town') }}" required autocomplete="placeofbirth" autofocus>
+                                name="town" value="{{ old('town') }}"   autofocus>
 
-                                @error('town')
-                                <span class="alert alert-primary" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
+                               
                             </div>
                         </div>
                         <div class="form-group row">

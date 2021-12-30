@@ -114,7 +114,7 @@
 
                             <div class="col-md-6">
                                 <input id="town" type="text" class="form-control @error('name') is-invalid @enderror" 
-                                name="town" value="{{ old('town') }}" required autocomplete="placeofbirth" autofocus>
+                                name="town" value="{{ old('town',$resident->town) }}" required autocomplete="town" autofocus>
 
                                 @error('town')
                                 <span class="alert alert-primary" role="alert">

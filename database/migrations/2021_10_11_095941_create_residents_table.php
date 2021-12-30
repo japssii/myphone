@@ -15,7 +15,7 @@ class CreateResidentsTable extends Migration
     {
         Schema::create('residents', function (Blueprint $table) {
             $table->id();
-            $table->no();
+            
             $table->string('lname');
             $table->string('fname');
             $table->string('mname');

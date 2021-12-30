@@ -3,17 +3,17 @@
 
 @section('content')
 
-<div class="row">
+<div class="row justify-content-center">
                         <div class=" col-md-6">
 
 
                             <!---- Total number of brgy pie ---->    
                         
                             <?php
-                            $con = mysqli_connect("localhost","root","","projector");
+                            $con = mysqli_connect("localhost","root","","system");
                             ?>
 
-                                <div class="card border-left-primary shadow h-100 py-2">
+                                <div class="card">
 
                             <head>
                                 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
@@ -46,7 +46,7 @@
                                 </script>
                             </head>
                                 <body>
-                                    <div id="piechart" style="width: 490px; height: 300px; "></div>
+                                    <div id="piechart" style="width: 500px; height: 450px; "></div>
                                 </body>
                         <div>
 
