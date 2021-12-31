@@ -35,7 +35,7 @@
             </form>
             </div>
             <div>
-                <a href="{{route('users.create') }}" class ="btn btn-success" class="float-right"> Create</a>
+                <a href="{{route('users.create') }}" class ="btn btn-success" class="float-right">Create</a>
                     </div>
                 </div>
             
@@ -44,7 +44,7 @@
             <table class="table">
          <thead>
          <tr>
-      <th scope="col">ID</th>
+      
       <th scope="col">Username</th>
       <th scope="col">Email</th>
       <th scope="col">Manage</th>
@@ -53,7 +53,7 @@
   <tbody>
   @foreach ($users as $user)
   <tr>
-      <th scope="row">{{ $user->id }}</th>
+      
       <td>{{ $user->username }}</td>
       <td>{{ $user->email }}</td>
       <td>   

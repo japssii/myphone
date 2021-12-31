@@ -51,20 +51,21 @@
               <table class="table table-hover table-bordered table-responsive  ">
               <thead>
                 <tr>
-                  <th scope="col">ID</th>
+                  
+                  
                   <th scope="col">Last Name</th>
                   <th scope="col">First Name</th>
                   <th scope="col">Middle Name</th>
                   <th scope="col">Age</th>
                   <th scope="col">Barangay</th>
                   <th scope="col">Operation</th>
-
+                  
                 </tr>
               </thead>
               <tbody>
           @foreach($residents as $resident)
           <tr>
-                <th scope="row">{{ $resident->id}}</th>
+                
                 <td>{{ $resident->lname}}</td>
                 <td>{{ $resident->fname}}</td>
                 <td>{{ $resident->mname}}</td>

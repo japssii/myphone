@@ -7,6 +7,10 @@
         <!-- Bar Chart -->
 
         <div class="card ">
+            <div  class="alert alert-info"  >
+                {{ __('   Range of Ages  ') }}
+              
+            </div>
                     
             <?php
             $con = mysqli_connect("localhost","root","","system");
@@ -21,7 +25,7 @@
 
                     function drawChart() {
                     var data = google.visualization.arrayToDataTable([
-                    ['Age', 'Number'],
+                    ['Age', 'Age'],
 
                     <?php 
                     $sql="SELECT age, count(*) as number FROM residents GROUP BY age";
@@ -34,7 +38,7 @@
 
                     var options = {
                     chart: {
-                        title: 'Range of Ages'
+                       
                         
                     },
                     bars: 'vertical' // Required for Material Bar Charts.

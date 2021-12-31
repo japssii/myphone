@@ -9,11 +9,17 @@
 
                             <!---- Total number of brgy pie ---->    
                         
-                            <?php
-                            $con = mysqli_connect("localhost","root","","system");
-                            ?>
+                           
 
                                 <div class="card">
+                                    <div  class="alert alert-info"  >
+                                        {{ __('  TOTAL NO. PER BARANGAY   ') }}
+                                      
+                                    </div>
+                                    <?php
+                                    $con = mysqli_connect("localhost","root","","system");
+                                    ?>
+         
 
                             <head>
                                 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
@@ -36,7 +42,8 @@
                                     ]);
                 
                                     var options = {
-                                        title: 'TOTAL NO. PER BARANGAY'
+                                        
+                                        
                                     };
                 
                                     var chart = new google.visualization.PieChart(document.getElementById('piechart'));

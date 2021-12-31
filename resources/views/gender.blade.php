@@ -8,7 +8,7 @@
                            <div class="row">
 
                             <!-- Pie Chart -->
-                            <div class="card border-left-primary shadow h-200 py-2">
+                            <div>
                             <?php
                             $con = mysqli_connect("localhost","root","","system");
                             ?>

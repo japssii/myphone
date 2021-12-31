@@ -99,7 +99,7 @@
                                 <option {{ ($resident->brgy) == 'Garnaden' ? 'selected' : '' }}  value="Garnaden">Garnaden</option>
                                 <option {{ ($resident->brgy) == 'Naguillan(pagpag-ong)' ? 'selected' : '' }}  value="Naguillan(pagpag-ong)">Naguillan(pagpag-ong)</option>
                                 <option {{ ($resident->brgy) == 'Poblacion' ? 'selected' : '' }}  value="Poblacion">Poblacion</option>
-                                <option {{ ($resident->brgy) == 'Poblacion' ? 'selected' : '' }}  value="Poblacion">Poblacion</option>
+                                
                                 <option {{ ($resident->brgy) == 'Santo Niño' ? 'selected' : '' }}  value="Santo Niño">Santo Niño</option>
 
                             </select>
@@ -116,7 +116,7 @@
                             <label for="placeofbirth" class="col-md-4 col-form-label text-md-right">{{ __('Town') }}</label>
 
                             <div class="col-md-6">
-                                <input id="town" type="text" class="form-control @error('name') is-invalid @enderror" 
+                                <input id="town" type="text" class="form-control" 
                                 name="town" value="{{ old('town') }}"   autofocus>
 
                                

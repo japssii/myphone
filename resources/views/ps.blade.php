@@ -9,6 +9,10 @@
 
                                 <!-- Pie Chart -->
                                 <div class="card">
+                                    <div  class="alert alert-info"  >
+                                        {{ __('  TOTAL NO. of 4Ps   ') }}
+                                      
+                                    </div>
                                 <?php
                                 $con = mysqli_connect("localhost","root","","system");
                                 ?>
@@ -34,7 +38,8 @@
                                         ]);
                     
                                         var options = {
-                                        title: 'TOTAL NO. of 4Ps'
+                                        title: ''
+                                        
                                         };
                     
                                         var chart = new google.visualization.PieChart(document.getElementById('piechart'));
@@ -44,7 +49,7 @@
                                     </script>
                                 </head>
                                 <body>
-                                    <div id="piechart" style="width: 600px; height: 400px; "></div>
+                                    <div id="piechart" style="width: 500px; height: 450px; "></div>
                                     </body>
                     
                                 <!-- /.container-fluid -->

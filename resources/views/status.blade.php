@@ -4,7 +4,11 @@
 @section('content')
 <div class="row justify-content-center">
     <div class=" col-md-6">
-        <html>
+      <div class="card ">
+        <div  class="alert alert-info"  >
+          {{ __('   Civil Status  ') }}
+        
+      </div>
             <head>
                 <?php
                                 $con = mysqli_connect("localhost","root","","system");
@@ -27,7 +31,7 @@
           ]);
           
                   var options = {
-                    title: 'Civil Status',
+                    
                     pieHole: 0.4,
                   };
           
@@ -39,7 +43,7 @@
             <body>
               <div id="donutchart" style="width: 500px; height: 400px;"></div>
             </body>
-          </html>
+          </div>
           
 
     </div>
